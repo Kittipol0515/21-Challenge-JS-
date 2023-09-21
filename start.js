@@ -1,4 +1,5 @@
 (() => {
+
     const canvas = document.getElementById('falling-snow-canvas');
     const canvasContext = canvas.getContext('2d');
     canvas.width = window.innerWidth;
