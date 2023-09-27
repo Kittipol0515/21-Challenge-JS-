@@ -13,7 +13,6 @@ footer {
 img {
     width: 100vw;
     height: 80vh;
-
     object-fit: cover;
 }
 
@@ -29,14 +28,13 @@ img {
     transition: 0.4 all linear;
 }
 
-.text h2 {
+.text > h2 {
     text-align: center;
     margin: 0;
 }
 
-.text p {
+.text > p {
     color: #888888;
-
     margin: 0;
     padding: 10px 30px;
 }
