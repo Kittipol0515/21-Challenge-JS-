@@ -2,7 +2,7 @@
     --good-aqi-color: #b0e767;
     --medium-aqi-color: #fe9b56;
     --bad-aqi-color: #fe6a69;
-    --current-aqi-color: var(var(--good-aqi-color))
+    --current-aqi-color: var(--good-aqi-color)
 }
 
 body {
