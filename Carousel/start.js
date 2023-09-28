@@ -1,23 +1,20 @@
 (() => {
     let currentIndex = 0;
   
-    function slideImage(imageElem) {
-      imageElem.scrollIntoView({ behavior: 'smooth' });
+   function displayImage(imageElems, newIndex) {
+    const lastIndex = imageElems.length - 1;
+
+    if ( newIndex < 0) {
+        newIndex = lastIndex;
+    } else if (newIndex > lastIndex) {
+        newIndex = 0
     }
-  
-    function displayImage(imageElems, newIndex) {
-      const lastIndex = imageElems.length - 1;
-  
-      if (newIndex < 0) {
-        currentIndex = lastIndex;
-      } else if (newIndex > lastIndex) {
-        currentIndex = 0;
-      } else {
-        currentIndex = newIndex;
-      }
-  
-      slideImage(imageElems[currentIndex]);
-    }
+
+    const newImage = imageElems[newIndex];
+    newImage.scrollIntoView({ behavior: 'smooth' });
+
+    currentIndex = newIndex;
+   }
   
     function run() {
       const imageElems = document.querySelectorAll('img');
