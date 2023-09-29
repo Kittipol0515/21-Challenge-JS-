@@ -74,12 +74,11 @@ body {
   
   input {
     -webkit-appearance: none;
-    outline: none;
-  
     background: #fceaf1;
     cursor: pointer;
     overflow: hidden;
     width: 220px;
+    border: none; /* Add a border to replace outline if needed */
   }
   
   input::-webkit-slider-thumb {
