@@ -1,5 +1,5 @@
 (() => {
-    const KEY = '4c0096bd-0caf-404a-ad7e-5268f6887029';
+    // const KEY = 'key';
 
     async function getAirQuality({ city, state, country }) {
         const response = await fetch(
